@@ -19,19 +19,19 @@ const Skill: React.FC = () => {
                 </Box>
                 <Container>
                     <Grid container spacing={6}>
-                        <Grid xs={12}>
+                        <Grid xs={12} md={12} lg={12}>
                             <SkillListItem title={programming.title} items={programming.items} />
                         </Grid>
-                        <Grid xs={6}>
+                        <Grid xs={12} md={12} lg={6}>
                             <SkillListItem title={framework.title} items={framework.items} />
                         </Grid>
-                        <Grid xs={6}>
+                        <Grid xs={12} md={12} lg={6}>
                             <SkillListItem title={toul.title} items={toul.items} />
                         </Grid>
-                        <Grid xs={6}>
+                        <Grid xs={12} md={12} lg={6}>
                             <SkillListItem title={infra.title} items={infra.items} />
                         </Grid>
-                        <Grid xs={6}>
+                        <Grid xs={12} md={12} lg={6}>
                             <QualifiListItem qualifies={qualifi} />
                         </Grid>
                     </Grid> 

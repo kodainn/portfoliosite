@@ -20,18 +20,18 @@ const SkillListItem: React.FC<Props> = ({ title, items }) => {
         {title}
       </Typography>
       <Grid container spacing={3}>
-        <Grid item xs={4} sx={{textAlign: "center"}}>
+        <Grid item xs={4} sx={{textAlign: "center", wordWrap: "break-word"}}>
           <Typography variant="h6">
             技術
           </Typography>
         </Grid>
-        <Grid item xs={4} sx={{textAlign: "center"}}>
+        <Grid item xs={4} sx={{textAlign: "center", wordWrap: "break-word"}}>
           <Typography variant="h6">
             経験年数(年/月)
           </Typography>
           
         </Grid>
-        <Grid item xs={4} sx={{textAlign: "center"}}>
+        <Grid item xs={4} sx={{textAlign: "center", wordWrap: "break-word"}}>
           <Typography variant="h6">
             スキルレベル
           </Typography>
@@ -39,14 +39,14 @@ const SkillListItem: React.FC<Props> = ({ title, items }) => {
         {items.map((item) => {
           return (
             <>
-              <Grid item xs={4} sx={{textAlign: "center"}}>
+              <Grid item xs={4} sx={{textAlign: "center", wordWrap: "break-word"}}>
                 {item.name}
               </Grid>
-              <Grid item xs={4} sx={{textAlign: "center"}}>
+              <Grid item xs={4} sx={{textAlign: "center", wordWrap: "break-word"}}>
                 {item.period}
               </Grid>
               <Grid item xs={4} sx={{textAlign: "center"}}>
-                <Rating name="read-only" value={item.level} readOnly />
+                <Rating sx={{fontSize: 15}} name="read-only" value={item.level} readOnly />
               </Grid>
             </>
           );

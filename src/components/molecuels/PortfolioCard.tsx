@@ -20,7 +20,7 @@ const PortfolioCard: React.FC<Props> = ({ title, sentence, techStacks, imagePath
         <Card sx={{height: "100%"}}>
             <CardMedia
                 component="img"
-                height="140"
+                height="40%"
                 image={imagePath}
                 width={"100%"}
             />
@@ -35,13 +35,13 @@ const PortfolioCard: React.FC<Props> = ({ title, sentence, techStacks, imagePath
                     {techStacks}
                 </Typography>
                 <Typography gutterBottom color="text.secondary">
-                    <Link href={githubLink} underline="hover">
+                    <Link href={githubLink} target="_blank" underline="hover">
                         github
                     </Link>
                 </Typography>
                 <Typography gutterBottom color="text.secondary">
-                    {githubLink2.length ?
-                        (<Link href={githubLink2} underline="hover">
+                    {githubLink2.length !== 0 ?
+                        (<Link href={githubLink2} target="_blank" underline="hover">
                             github2
                         </Link>) : ""}
                 </Typography>

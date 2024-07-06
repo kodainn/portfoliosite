@@ -6,7 +6,7 @@ import Skill from "../components/organisms/Skill";
 import Work from "../components/organisms/Work";
 
 
-const PortfoliaPage: React.FC = () => {
+const PortfolioPage: React.FC = () => {
     return (
         <>
             <Stack spacing={20} marginBottom={20} sx={{ display: 'flex', justifyContent: 'center' }}>
@@ -25,4 +25,4 @@ const PortfoliaPage: React.FC = () => {
     );
 };
 
-export default PortfoliaPage;
+export default PortfolioPage;

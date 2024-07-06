@@ -17,7 +17,7 @@ const Work: React.FC = () => {
                 </Box>
                 <Container>
                     <Grid container spacing={5} sx={{display: "flex", justifyContent: "center"}}>
-                        <Grid item xs={4}>
+                        <Grid item xs={12} md={6} lg={4}>
                             <PortfolioCard 
                                 title={portfolioSite.title}
                                 sentence={portfolioSite.sentence}
@@ -25,7 +25,7 @@ const Work: React.FC = () => {
                                 imagePath={portfolioSite.imagePath}
                                 githubLink={portfolioSite.githubLink} />
                         </Grid>
-                        <Grid item xs={4}>
+                        <Grid item xs={12} md={6} lg={4}>
                             <PortfolioCard 
                                 title={techBooksStudy.title}
                                 sentence={techBooksStudy.sentence}
@@ -34,7 +34,7 @@ const Work: React.FC = () => {
                                 githubLink={techBooksStudy.githubLink}
                                 githubLink2={techBooksStudy.githubLink2} />
                         </Grid>
-                        <Grid item xs={4}>
+                        <Grid item xs={12} md={6} lg={4}>
                             <PortfolioCard 
                                 title={goodBuy.title}
                                 sentence={goodBuy.sentence}
