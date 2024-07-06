@@ -3,22 +3,26 @@ import Header from "../components/organisms/Header";
 import { Box, Stack } from "@mui/material";
 import About from "../components/organisms/About";
 import Skill from "../components/organisms/Skill";
+import Work from "../components/organisms/Work";
 
 
-const HomePage: React.FC = () => {
+const PortfoliaPage: React.FC = () => {
     return (
         <>
-            <Stack spacing={20} marginBottom={20}>
+            <Stack spacing={20} marginBottom={20} sx={{ display: 'flex', justifyContent: 'center' }}>
                 <Header />
-                <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+                <Box >
                     <About />
                 </Box>
-                <Box sx={{ display: 'flex', justifyContent: 'center'}}>
+                <Box>
                     <Skill />
+                </Box>
+                <Box>
+                    <Work />
                 </Box>
             </Stack>
         </>
     );
 };
 
-export default HomePage;
+export default PortfoliaPage;

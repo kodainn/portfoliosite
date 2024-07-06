@@ -12,7 +12,7 @@ const Header: React.FC = () => {
             <AppBar position="static" sx={{backgroundColor: brown[400]}}>
                 <Toolbar>
                 <Typography variant="h6" component="div">
-                    Home
+                    PortfoliaSite
                 </Typography>
                 </Toolbar>
             </AppBar>
